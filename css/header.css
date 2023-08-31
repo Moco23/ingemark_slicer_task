@@ -1,0 +1,84 @@
+/* logo style */
+.logo {
+  width: 50px;
+  height: 50px;
+}
+/* logo style */
+
+/* mobile man btns */
+.mobile_nav_btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+/* mobile man btns */
+
+/* mobile nav btn icos */
+.mobile_nav_icon {
+  color: orange;
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
+/* main nav close icon */
+.mobile_nav_icon[name="close-outline"] {
+  display: none;
+}
+/* main nav close icon */
+/* mobile nav btn icos */
+
+/* slider bar  */
+.slider_btn {
+  background: none;
+  cursor: pointer;
+  border: none;
+  cursor: pointer;
+  display: block;
+}
+
+.slider_icon {
+  color: orange;
+  width: 4.8rem;
+  height: 4.8rem;
+}
+.slider_icon[name="close-outline"] {
+  display: none;
+}
+
+.slider_holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8);
+  color: orange;
+  font-size: 3rem;
+
+  transition: all 0.5s ease-in-out;
+  transform: translateX(-100%);
+  font-size: 3rem;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.slider_open .slider_holder {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.slider_open .slider_icon[name="close-outline"] {
+  display: block;
+}
+
+.slider_open .slider_icon[name="menu-outline"] {
+  display: none;
+}
+/* slider bar  */

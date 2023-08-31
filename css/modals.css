@@ -1,0 +1,61 @@
+/* show modal btn */
+.show-modal {
+  background: transparent;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border: none;
+  color: orange;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+/* show modal btn */
+
+/* show modal btn hvoer*/
+
+.show-modal:hover {
+  margin-top: -0.5rem;
+  color: blue;
+}
+/* show modal btn hvoer*/
+
+/* close modal btn */
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: white;
+}
+/* close modal btn */
+
+/* modal  */
+.modal {
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  background: #fff;
+  z-index: 6;
+}
+/* modal  */
+
+/* overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+/* overlay */

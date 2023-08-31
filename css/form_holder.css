@@ -1,0 +1,49 @@
+/* main content */
+main {
+  margin: 5rem 0 5rem 0;
+  height: 100%;
+}
+/* main content */
+
+/* form intpus */
+.form_inputs {
+  width: 34rem;
+  height: 4.5rem;
+  cursor: pointer;
+  border: 0.1rem solid;
+
+  background: #dadada;
+}
+/* form intpus */
+
+/* form inputs radio */
+.form_radio_labels {
+  font-size: 1.8rem;
+}
+
+.form_radio {
+  width: 25px;
+  height: 25px;
+}
+/* form inputs radio */
+
+/* form submit btn */
+.form_submit_btn {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  color: orange;
+
+  border: none;
+  padding: 1rem 2rem;
+  background: var(--main_bg_color);
+  transition: 0.3s ease-in-out;
+}
+/* form submit btn */
+
+/* form submit btn hover*/
+.form_submit_btn:hover {
+  background: transparent;
+  color: var(--main_bg_color);
+  border: 0.1rem solid var(--main_bg_color);
+}
+/* form submit btn hover*/

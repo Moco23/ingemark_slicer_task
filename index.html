@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+
+    <!--date picker libery css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/css/datepicker.min.css"
+    />
+    <!--date picker libery css -->
+    <!-- my css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- my css -->
+
+    <!-- i-icon scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- i-icon scripts -->
+
+    <!-- date picker libery -->
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/js/datepicker.min.js"></script>
+
+    <!-- date picker libery -->
+  </head>
+  <body>
+    <!-- header -->
+    <header
+      class="width_100 height_64px d_flex space_between align_center header"
+    >
+      <!-- logo and slide bar btn box -->
+      <div class="logo_slideBar_box">
+        <!-- logo -->
+        <div class="logo_box d_flex content_center align_center g_10px">
+          <a href="index.html">
+            <img
+              src="css/ingemark_logo.png"
+              alt="Ingemark logo on the screen"
+              class="logo"
+            />
+          </a>
+
+          <!-- slider bar -->
+          <div class="slider_holder">
+            <ul>
+              <li>Item</li>
+              <li>Item</li>
+              <li>Item</li>
+            </ul>
+          </div>
+          <!-- open & close slider bar btn -->
+          <button class="slider_btn">
+            <ion-icon class="slider_icon" name="menu-outline"></ion-icon>
+            <ion-icon class="slider_icon" name="close-outline"></ion-icon>
+          </button>
+          <!-- open & close slider bar btn -->
+
+          <!-- slider bar -->
+        </div>
+        <!-- logo -->
+      </div>
+      <!-- logo and slide bar btn box -->
+
+      <!-- navigation -->
+      <nav class="d_flex g_10px main_nav">
+        <button class="show-modal">Projekti</button>
+        <button class="show-modal">Usluge</button>
+        <button class="show-modal">O nama</button>
+      </nav>
+      <!-- navigation -->
+
+      <!-- mobile nav btns -->
+      <button class="mobile_nav_btn">
+        <ion-icon class="mobile_nav_icon" name="menu-outline"></ion-icon>
+        <ion-icon class="mobile_nav_icon" name="close-outline"></ion-icon>
+      </button>
+      <!-- mobile nav btns -->
+    </header>
+    <!-- header -->
+
+    <!-- main content -->
+    <main class="d_flex d_flex_columns content_center align_center">
+      <!-- modals -->
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h1>Opsss... 🙁</h1>
+        <p>Stranica jos nije dostupna!</p>
+      </div>
+      <!-- modals -->
+
+      <!-- overlay -->
+      <div class="overlay hidden"></div>
+      <!-- overlay -->
+
+      <!-- form -->
+      <form class="d_flex d_flex_columns g_30px">
+        <!-- ime -->
+        <div class="d_flex d_flex_columns g_10px">
+          <label for="#ime">Unesite svoje ime</label>
+          <input type="text" id="ime" class="form_inputs" required />
+        </div>
+        <!-- ime -->
+
+        <!-- prezime -->
+        <div class="d_flex d_flex_columns g_10px">
+          <label for="#prezime">Unesite svoje prezime</label>
+          <input type="text" id="prezime" class="form_inputs" required />
+        </div>
+        <!-- prezime -->
+
+        <!-- grad -->
+        <div class="d_flex d_flex_columns g_10px">
+          <label for="#grad">Grad</label>
+          <input type="text" id="Grad" class="form_inputs" required />
+        </div>
+        <!-- grad -->
+
+        <!-- postanski broj -->
+        <div class="d_flex d_flex_columns g_10px">
+          <label for="#postanski_broj">Postanski broj</label>
+          <input
+            type="number"
+            id="postanski_broj"
+            class="form_inputs"
+            required
+          />
+        </div>
+        <!-- postanski broj -->
+
+        <!-- broj telefona -->
+        <div class="d_flex d_flex_columns g_10px">
+          <label for="#brojTelefona">Unesite broj telefona</label>
+          <input type="number" id="brojTelefona" class="form_inputs" required />
+        </div>
+        <!-- broj telefona -->
+
+        <!-- form radio pick -->
+        <div class="d_flex g_10px content_center align_center">
+          <div class="d_flex d_flex_columns g_10px align_center">
+            <label class="form_radio_labels" for="#musko">Musko</label>
+            <input type="radio" id="musko" class="form_radio" />
+          </div>
+
+          <div class="d_flex d_flex_columns g_10px align_center">
+            <label class="form_radio_labels" for="#zensko">Zensko</label>
+            <input type="radio" id="zensko" class="form_radio" />
+          </div>
+
+          <div class="d_flex d_flex_columns g_10px align_center">
+            <label class="form_radio_labels" for="#neZelimReci"
+              >Nije vazno</label
+            >
+            <input type="radio" id="neZelimReci" class="form_radio" />
+          </div>
+        </div>
+        <!-- form radio pick -->
+
+        <!-- date picker -->
+        <div class="d_flex d_flex_columns content_center align_center g_10px">
+          <label for="#datum">Odaberite datum</label>
+          <input type="date" name="foo" class="form_inputs" required />
+        </div>
+
+        <!-- date picker -->
+
+        <!-- submit bnt -->
+        <button
+          type="button"
+          class="form_submit_btn cursor_pointer d_flex content_center align_center"
+        >
+          Submit
+        </button>
+        <!-- submit bnt -->
+      </form>
+      <!-- form -->
+    </main>
+    <!-- main content -->
+
+    <!-- footer -->
+    <footer
+      class="width_100 height_64px d_flex align_center space_between text_center"
+    >
+      <!-- empty el -->
+      <div class="empty_div"></div>
+      <!-- empty el -->
+
+      <!-- motivacijska poruka -->
+      <div class="motivacija">
+        <p>Ograničenja su iluzija.</p>
+        <p>Odlučnost pobjeđuje prepreke.</p>
+      </div>
+      <!-- motivacijska poruka -->
+
+      <!-- ime i prezime programera -->
+      <div class="programer">
+        <p>Momcilo Nikolic</p>
+      </div>
+      <!-- ime i prezime programera -->
+    </footer>
+    <!-- footer -->
+
+    <!-- my js -->
+    <script src="/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+/* ************************************************ */
+/* import style files */
+@import "/css/header.css";
+@import "/css/form_holder.css";
+@import "/css/modals.css";
+@import "/css/query.css";
+@import "/css/footer.css";
+
+/* import style files */
+/* ************************************************ */
+
+/* root calss */
+:root {
+  --main_bg_color: #000000e0;
+}
+/* root calss */
+
+/* global restart  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+/* global restart  */
+
+/* body */
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+/* body */
+
+/* html */
+html {
+  overflow-x: hidden;
+  font-size: 10px;
+  font-family: sans-serif;
+  color: #333;
+}
+/* html */
+
+/* header and footer */
+header,
+footer {
+  background: var(--main_bg_color);
+  padding: 2rem;
+}
+/* header and footer */
+
+/* width */
+.width_100 {
+  width: 100%;
+}
+/* width */
+
+/* height */
+.height_64px {
+  height: 6.4rem;
+}
+
+.height_100 {
+  height: 100%;
+}
+/* height */
+
+/* flex class */
+.d_flex {
+  display: flex;
+}
+
+.d_flex_columns {
+  flex-direction: column;
+}
+/* flex class */
+
+/* content space and position class */
+.space_between {
+  justify-content: space-between;
+}
+
+.space_around {
+  justify-content: space-around;
+}
+
+.space_evenly {
+  justify-content: space-evenly;
+}
+
+.content_center {
+  justify-content: center;
+}
+
+.content_start {
+  justify-content: start;
+}
+
+.content_end {
+  justify-content: end;
+}
+/* content space and position class */
+
+/* align items calss */
+.align_center {
+  align-items: center;
+}
+
+.align_start {
+  align-items: start;
+}
+
+.align_end {
+  align-items: end;
+}
+/* align items calss */
+
+/* gap space */
+.g_10px {
+  gap: 1rem;
+}
+
+.g_30px {
+  gap: 3rem;
+}
+/* gap space */
+
+/* cursor */
+.cursor_pointer {
+  cursor: pointer;
+}
+/* cursor */
+
+/* text align */
+.text_center {
+  text-align: center;
+}
+/* text align */
+
+/* hidden class */
+.hidden {
+  display: none;
+}
+/* hidden class */
